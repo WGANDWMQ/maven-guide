@@ -540,6 +540,7 @@
 			<scope>test</scope>
 			<!--仅供system范围使用。注意，不鼓励使用这个元素，并且在新的版本中该元素可能被覆盖掉。该元素为依赖规定了文件系统上的路径。需要绝对路径而不是相对路径。推荐使用属性匹配绝对路径，例如${java.home}。-->
 			<!--<systemPath>d:\</systemPath>-->
+			<optional>true</optional> <!-- 防止将junit依赖传递到其他模块中 -->
 		</dependency>
 
 		<dependency>
